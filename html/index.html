@@ -11,7 +11,9 @@
     <p>PLEASE FILL OUT THIS FORM.</p>
    <form method="post"action='https://register-demo.freecodecamp.org>
 /form>'
-<fieldset><label for="first-name">Enter your First name: 
+<fieldset>
+    <div>
+    <label for="first-name">Enter your First name: 
     <input type="text", name="First name" 
     id="First name" required></label>
     <br>
@@ -21,18 +23,40 @@
         <label for="email">Please enter your email address: <input type="email" id="email" name="email"required>
         </label>
     <br>
-        <label for="password">Create a new password <input type="password"
+    <label for="password">Create a new password <input type="password"
             id="password" name="password" pattern="[a-z0-5]{8,}"required></label>
-
+        </div>
 </fieldset>
 
 <fieldset>
     <legend>Account type</legend>
     <label for="Personal "><input type="radio" name="Personal" id="personal" checked >
     Personal</label>
-    <label for="Public"><input type="radio" name="Public" id="Public">Public</label>
+    <br>
+    <label for="Public"><input type="radio" name="Personal" id="Public">Public</label>
 </fieldset>
-    
+
+<fieldset>
+    <label for="file">Plese enter your photo: <input type="file" name="file" id="file"></label>
+    <br>
+    <br>
+    <label for="age">Please enter your age: <input type="number" min="18" max="50"></label>
+    <br>
+    <label for="referrer">How did you hear about us: <select id="referrer" class="referrer">
+    <option value="">Please check your answer</option>
+    <option value="1">From Newspaper</option>
+    <option value="2">From Website</option>
+    <option value="3">From friends</option>
+    </select>
+</label>
+<br>
+<br>
+<label for="bio">Please provide your bio <textarea name="bio"  id="bio" placeholder="I like to code because"></textarea>
+</label>
+<br>
+</fieldset>
+<label for="terms"><input type="checkbox" class="terms" id="terms">Please accept the terms and condition</label>
+
 
 </body>
 </html>
