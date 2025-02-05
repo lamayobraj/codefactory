@@ -12,7 +12,7 @@
    <form method="post"action='https://register-demo.freecodecamp.org>
 /form>'
 <fieldset>
-    <div>
+    <fieldset><div>
     <label for="first-name">Enter your First name: 
     <input type="text", name="First name" 
     id="First name" required></label>
@@ -25,15 +25,16 @@
     <br>
     <label for="password">Create a new password <input type="password"
             id="password" name="password" pattern="[a-z0-5]{8,}"required></label>
-        </div>
+        </div></fieldset>
+    
 </fieldset>
 
 <fieldset>
     <legend>Account type</legend>
-    <label for="Personal "><input type="radio" name="Personal" id="personal" checked >
+    <label for="Personal "><input type="radio" class="inline" name="Personal" id="personal" checked >
     Personal</label>
     <br>
-    <label for="Public"><input type="radio" name="Personal" id="Public">Public</label>
+    <label for="Public"><input type="radio" class="inline" name="Personal" id="Public">Public</label>
 </fieldset>
 
 <fieldset>
